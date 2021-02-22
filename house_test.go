@@ -29,3 +29,19 @@ func TestIPAddresses(t *testing.T) {
 		})
 	}
 }
+
+// func TestGFW(t *testing.T) {
+// 	tests := []struct {
+// 		name    string
+// 		wantErr bool
+// 	}{
+// 		{"case-1", true},
+// 	}
+// 	for _, tt := range tests {
+// 		t.Run(tt.name, func(t *testing.T) {
+// 			if err := GFW(); (err != nil) != tt.wantErr {
+// 				t.Errorf("GFW() error = %v, wantErr %v", err, tt.wantErr)
+// 			}
+// 		})
+// 	}
+// }

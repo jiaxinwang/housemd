@@ -22,6 +22,16 @@ type IPInfo struct {
 	Readme   string `json:"readme"`
 }
 
+// GFW ...
+func GFW() error {
+	ro := grequests.RequestOptions{
+		Params:         map[string]string{},
+		RequestTimeout: time.Second * 60,
+	}
+	_, err := grequests.Get(`https://www.google.com`, &ro)
+	return err
+}
+
 // IPAddresses ...
 func IPAddresses() (IPInfo, error) {
 	var ret IPInfo
